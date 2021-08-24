@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Skeleton from './structure';
+import SingleConversion from './single-conversion';
 import './App.css';
 
 const Home = () => {
@@ -23,25 +24,6 @@ const App = () => {
   return (
     <Router>
       <Skeleton>
-        <div className="container">
-          <h2>React Router Demo</h2>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about/">About</Link>
-              </li>
-              <li>
-                <Link to="/contact/">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-          <Route path="/" exact component={Home} />
-          <Route path="/about/" component={About} />
-          <Route path="/contact/" component={Contact} />
-        </div>
       </Skeleton>
     </Router>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import SingleConversion from './single-conversion';
 
 const Skeleton = (props) => {
     return (
@@ -20,6 +21,7 @@ const Skeleton = (props) => {
                 </div>
             </nav>
             <div className="container">
+                <SingleConversion></SingleConversion>
                 <h2>Main Currency Conversion Content</h2>
             </div>
             <footer className='footer'>
