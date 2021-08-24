@@ -48,21 +48,29 @@ class SingleConversion extends React.Component {
         const { rate, usd, euro } = this.state;
         return (
             <React.Fragment>
-                <div className='container'>
-                    <div className="border py-4 rounded my-3 mx-auto text-center" style={{backgroundColor: 'lightgrey'}}>
-                        <h2 className="mb-2" style={{color: 'darkblue'}}>Single Currency Converter</h2>
-                        <h4>USD 1 : {rate} EURO</h4>
-                    </div> 
+                <div className='container' id="currency-conversion">
+                    <div className='row'>
+                        <div className='col-3'></div>
+                            <div className=" col-6 border py-4 rounded my-2 text-center" style={{backgroundColor: 'lightgrey'}}>
+                                <h3 className="mb-2" style={{color: 'darkblue'}}>Single Currency Converter</h3>
+                                <h4>USD 1 : {rate} EURO</h4>
+                            </div>
+                        <div className='col-3'></div>
+                    </div>
+                         
                     <div className="row text-center">
-                        <div className="col-12 border rounded text-center my-3 py-4"  style={{backgroundColor: 'lightgrey'}}>
+                        <div className='col-3'></div>
+                        <div className="col-6 border rounded text-center my-2 py-4"  style={{backgroundColor: 'lightgrey'}}>
                             <input value={usd} onChange={this.handleUsdChange} type="number" />
                             <span className="mr-1" style={{color: 'darkblue'}}>USD</span>
                             <span className="mx-3">=</span>
                             <input value={euro} onChange={this.handleEuroChange} type="number" />
                             <span className="ml-1" style={{color: 'darkblue'}}>EURO</span>
                         </div>
+                        <div className='col-3'></div>
                     </div>
                 </div>
+                <hr />
             </React.Fragment>
         )
     }
