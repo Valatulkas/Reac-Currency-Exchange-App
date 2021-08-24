@@ -7,7 +7,7 @@ const Skeleton = (props) => {
         <React.Fragment>
             <nav className="navbar">
                 <div className='container'>
-                    <div className="row">
+                    <div className="row" id="logo">
                         <i class="fas fa-search-dollar fa-4x"></i>
                     </div>
                     <div className="row clams">
@@ -28,17 +28,17 @@ const Skeleton = (props) => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-4 text-center'>
-                            <a href=''>
+                            <a href='https://github.com/Valatulkas'>
                                 <i class="fab fa-github fa-3x"></i>
                             </a>
                         </div>
                         <div className="col-4 text-center">
-                            <a href=''>
+                            <a href="mailto:jfergie93@gmail.com">
                                 <i class="fas fa-paper-plane fa-3x"></i>
                             </a>
                         </div>
                         <div className="col-4 text-center">
-                            <a href=''>
+                            <a href='https://www.chess.com/home'>
                                 <i class="fas fa-chess fa-3x"></i>
                             </a>
                         </div>
