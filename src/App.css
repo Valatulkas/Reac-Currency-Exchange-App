@@ -4,7 +4,28 @@ li {
   align-items: center;
   text-align: center;
 }
+h2, .clams {
+  text-align: center;
+  margin: auto;
+}
+nav, .footer {
+  position: fixed;
+  width: 100%;
+}
+nav {
+  top: 0;
+  background-color: mediumturquoise;
+}
+footer {
+  bottom: 0;
+  height: 60px;
+  background-color:mediumturquoise;
+}
+.purple>a {
+  color: purple;
+}
 
+/* REFRESH button rotation */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

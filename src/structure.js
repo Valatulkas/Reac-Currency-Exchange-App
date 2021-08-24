@@ -4,15 +4,15 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 const Skeleton = (props) => {
     return (
         <React.Fragment>
-            <nav className="navbar bg-primary">
+            <nav className="navbar">
                 <div className='container'>
                     <div className="row">
                         <img src='' alt='clam-photo'/>
                     </div>
-                    <div className="row">
-                        <span className='navbar-brand h1'>Clam Conversion</span>
+                    <div className="row clams">
+                        <span className='h1'>Clam Conversion</span>
                     </div>
-                    <div className="row">
+                    <div className="row purple">
                         <a href=' ' alt='refresh-button'>
                             <img src='' alt='refresh-button'/>
                         </a>
