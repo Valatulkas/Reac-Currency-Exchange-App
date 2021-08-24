@@ -31,8 +31,12 @@ nav {
 }
 footer {
   bottom: 0;
-  height: 60px;
+  height: 80px;
   background-color:mediumturquoise;
+}
+footer>a>i {
+  align-items: center;
+  vertical-align: middle;
 }
 .purple>a {
   color: purple;

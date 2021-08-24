@@ -8,14 +8,14 @@ const Skeleton = (props) => {
             <nav className="navbar">
                 <div className='container'>
                     <div className="row">
-                        <img src='' alt='clam-photo'/>
+                        <i class="fas fa-search-dollar fa-4x"></i>
                     </div>
                     <div className="row clams">
-                        <span className='h1'>Clam Conversion</span>
+                        <span className='h1'>Smart Wallet</span>
                     </div>
                     <div className="row purple">
                         <a href=' ' alt='refresh-button'>
-                            <img src='' alt='refresh-button'/>
+                            <i class="fas fa-sync-alt fa-3x"></i>
                         </a>
                     </div>
                 </div>
@@ -29,14 +29,18 @@ const Skeleton = (props) => {
                     <div className='row'>
                         <div className='col-4 text-center'>
                             <a href=''>
-                                <img src='' alt='github'/>
+                                <i class="fab fa-github fa-3x"></i>
                             </a>
                         </div>
                         <div className="col-4 text-center">
-                            <a href=''>jfergie93@gmail.com</a>
+                            <a href=''>
+                                <i class="fas fa-paper-plane fa-3x"></i>
+                            </a>
                         </div>
                         <div className="col-4 text-center">
-                            <img src='' alt='chess'/>
+                            <a href=''>
+                                <i class="fas fa-chess fa-3x"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
