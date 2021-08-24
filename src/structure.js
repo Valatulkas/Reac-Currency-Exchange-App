@@ -1,0 +1,46 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+const Skeleton = (props) => {
+    return (
+        <React.Fragment>
+            <nav className="navbar bg-primary">
+                <div className='container'>
+                    <div className="row">
+                        <img src='' alt='clam-photo'/>
+                    </div>
+                    <div className="row">
+                        <span className='navbar-brand h1'>Clam Conversion</span>
+                    </div>
+                    <div className="row">
+                        <a href=' ' alt='refresh-button'>
+                            <img src='' alt='refresh-button'/>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div className="container">
+                <h2>Main Currency Conversion Content</h2>
+            </div>
+            <footer className='footer'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-4 text-center'>
+                            <a href=''>
+                                <img src='' alt='github'/>
+                            </a>
+                        </div>
+                        <div className="col-4 text-center">
+                            <a href=''>jfergie93@gmail.com</a>
+                        </div>
+                        <div className="col-4 text-center">
+                            <img src='' alt='chess'/>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </React.Fragment>
+    )
+}
+
+export default Skeleton;
