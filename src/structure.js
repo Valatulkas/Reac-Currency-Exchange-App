@@ -13,9 +13,10 @@ const Skeleton = (props) => {
                     <div className="row clams">
                         <span className='h1'>Smart Wallet</span>
                     </div>
-                    <div className="row purple">
+                    <div className="row">
                         <a href=' ' alt='refresh-button'>
-                            <i class="fas fa-sync-alt fa-3x"></i>
+                            <h4 className='text-center'>reset</h4>
+                            <i class="fas fa-sync-alt fa-3x purple"></i>
                         </a>
                     </div>
                 </div>
