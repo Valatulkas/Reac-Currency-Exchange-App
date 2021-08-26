@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import SingleConversion from './single-conversion';
-import MainComponent from './main-component';
 import MainCurrencyConversion from './main-component';
     
 const Skeleton = (props) => {
@@ -33,17 +32,17 @@ const Skeleton = (props) => {
                     <div className='row'>
                         <div className='col-4 text-center'>
                             <a href='https://github.com/Valatulkas'>
-                                <i class="fab fa-github fa-3x"></i>
+                                <i className="fab fa-github fa-3x"></i>
                             </a>
                         </div>
                         <div className="col-4 text-center">
                             <a href="mailto:jfergie93@gmail.com">
-                                <i class="fas fa-paper-plane fa-3x"></i>
+                                <i className="fas fa-paper-plane fa-3x"></i>
                             </a>
                         </div>
                         <div className="col-4 text-center">
                             <a href='https://www.chess.com/home'>
-                                <i class="fas fa-chess fa-3x"></i>
+                                <i className="fas fa-chess fa-3x"></i>
                             </a>
                         </div>
                     </div>
