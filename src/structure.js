@@ -1,7 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import SingleConversion from './single-conversion';
-import MainCurrencyConversion from './main-component';
     
 const Skeleton = (props) => {
     return (
@@ -22,10 +19,8 @@ const Skeleton = (props) => {
                     </div>
                 </div>
             </nav>
-            <div className="container">
-                <SingleConversion></SingleConversion>
-                <h1 className='main-heading'>Main Currency Conversion Content</h1>
-                <MainCurrencyConversion></MainCurrencyConversion>
+            <div className='container py-3'>
+                {props.children}
             </div>
             <footer className='footer'>
                 <div className='container'>
