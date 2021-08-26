@@ -1,10 +1,9 @@
 import React from 'react';
 import { json, checkStatus } from './utils';
 import currencies from './currencies';
-import { Link } from 'react-router-dom';
 import CurrencyTable from './currency-table.js';
 
-class MainCurrencyconversion extends React.Component {
+class MainComponent extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -40,7 +39,6 @@ class MainCurrencyconversion extends React.Component {
                 this.setState({ rates, loading: false });
             })
             .catch(error => console.error(error.message));
-
     }
     render () {
         const { base, rates, loading } = this.state;
@@ -48,7 +46,7 @@ class MainCurrencyconversion extends React.Component {
             <React.Fragment>
                 <form className="p-3 bg-light form-inline justify-content-center">
                     <h3 className="mb-2">Base currency: <b className="mr-2">1</b></h3>
-                    <select value={base} onChange={this.changeBase} className="form-control form-control-lg mb-2" disabled={loading}>
+                    <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading}>
                         {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}
                     </select>
                 </form>
@@ -58,4 +56,4 @@ class MainCurrencyconversion extends React.Component {
     }
 }
 
-export default MainCurrencyconversion
+export default MainComponent

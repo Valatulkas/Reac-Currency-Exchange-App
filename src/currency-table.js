@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import currencies from './currencies';
 
 const CurrencyTable = (props) => {
     const { base, rates } = props;
