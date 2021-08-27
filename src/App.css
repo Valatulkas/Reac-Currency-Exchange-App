@@ -39,7 +39,11 @@ footer>a {
   align-items: center;
   vertical-align: middle;
 }
-
+#component-border {
+  border-style: solid;
+  border-width: thin;
+  border-color: olive;
+}
 a, #logo {
   color: darkgreen;
   text-decoration: none;
