@@ -21,7 +21,7 @@ class ConversionComponent extends React.Component {
     }
     getRate = (base, quote) => {
         this.setState({ loading: true });
-        fetch('https://altexchangerateapi.herokuapp.com/latest?from=${base}&to=${quote}')
+        fetch("https://altexchangerateapi.herokuapp.com/latest?from=${base}&to=${quote}")
             .then(checkStatus)
             .then(json)
             .then(data => {
