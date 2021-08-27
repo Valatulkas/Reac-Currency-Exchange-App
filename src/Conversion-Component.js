@@ -106,12 +106,12 @@ class ConversionComponent extends React.Component {
             <React.Fragment>
                 <div>
                     <div className='col-3'></div>
-                    <h3 className='col-6 border py-4 text-center align-self-center justify-self-center' style={{backgroundColor: 'lightgrey'}}><b>Convert Your Currencies</b><br/>{baseAcronym} to {quoteAcronym} = {rate.toFixed(2)} {currencies[quoteAcronym].name}</h3>
+                    <h3 className='col-6 border py-4 my-3 text-center align-self-center justify-self-center' style={{backgroundColor: 'lightgrey'}}><b>Convert Your Currencies</b><br/>{baseAcronym} to {quoteAcronym} = {rate.toFixed(2)} {currencies[quoteAcronym].name}</h3>
                     <div className='col-3'></div>
                 </div>
-                <form className='bg-light'>
+                <form>
                     <div className='row '>
-                        <div className='col-md-2'></div>
+                        <div className='col-md-2 honeydew'></div>
                         <div className='col-md-8 border py-4 my-2 rounded text-center form-group' style={{backgroundColor: 'lightgrey'}}>
                             <div id="component-border">
                                 <select value={baseAcronym} onChange={this.changeBaseAcronym} className='form-control' disabled={loading}>
@@ -135,7 +135,7 @@ class ConversionComponent extends React.Component {
                                 <small>{currencies[quoteAcronym].name}</small>
                             </div>
                         </div>
-                        <div className='col-md-2'></div>
+                        <div className='col-md-2 honeydew'></div>
                     </div>
                 </form>
                 <canvas ref={this.chartRef} />

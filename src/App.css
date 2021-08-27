@@ -4,6 +4,14 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+#root, .honeydew {
+  background-color: honeydew;
+}
+.clams {
+  font-family: 'Courier New', Courier, monospace;
+  color: antiquewhite;
+  font-size: 60px;
+}
 li {
   display: inline-block;
   align-items: center;
@@ -21,18 +29,16 @@ h2, h1, h3, .clams {
   text-align: center;
   margin: auto;
 }
-nav, .footer {
-  position: fixed;
-  width: 100%;
-}
 nav {
   top: 0;
-  background-color: mediumturquoise;
+  background-color: darkslategray;
+  border-radius: 0% 0% 23% 23%;
 }
 footer {
   bottom: 0;
   height: 80px;
-  background-color:mediumturquoise;
+  background-color:darkslategray;
+  border-radius: 18% 18% 0% 0%;
 
 }
 footer>a {
@@ -43,14 +49,16 @@ footer>a {
   border-style: solid;
   border-width: thin;
   border-color: olive;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 a, #logo {
-  color: darkgreen;
+  color: white;
   text-decoration: none;
 }
 a:hover {
-  text-decoration:indigo;
-
+  text-decoration:honeydew;
 }
 
 /* REFRESH button rotation */

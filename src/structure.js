@@ -5,21 +5,21 @@ const Skeleton = (props) => {
         <React.Fragment>
             <nav className="navbar">
                 <div className='container'>
-                    <div className="row" id="logo">
+                    <div className='row px-4 mx-4' id='logo'>
                         <i class="fas fa-search-dollar fa-4x"></i>
                     </div>
-                    <div className="row clams">
-                        <span className='h1'>Smart Wallet</span>
+                    <div className='row'>
+                        <h1 className='clams'>Smart Wallet</h1>
                     </div>
-                    <div className="row">
+                    <div className='row  px-4 mx-4'>
                         <a href=' ' alt='refresh-button'>
-                            <h4 className='text-center'>reset</h4>
+                            <h5 className='text-center'><small>reset</small></h5>
                             <i class="fas fa-sync-alt fa-3x purple"></i>
                         </a>
                     </div>
                 </div>
             </nav>
-            <div className='container py-3'>
+            <div className='container' id='main-content'>
                 {props.children}
             </div>
             <footer className='footer'>
