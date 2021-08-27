@@ -1,5 +1,4 @@
 import React from 'react';
-import Chart from 'chart.js';
 import currencies from './currencies';
 import { checkStatus, json } from './utils';
 
@@ -14,7 +13,7 @@ class ConversionComponent extends React.Component {
             quoteAcronym: params.get('quote') || 'DKK',
             loading: false,
         };
-        this.chartREF = React.createRef();
+        this.chartRef = React.createRef();
     }
     componentDidMount () {
         const { baseAcronym, quoteAcronym} = this.state;
@@ -39,7 +38,7 @@ class ConversionComponent extends React.Component {
             })
             .catch(error => console.error(error.message));
     }
-    buildChart = (labels, data, label) => {
+    /* buildChart = (labels, data, label) => {
         const chartRef = this.chartRef.curent.getContext('2d');
         if (typeof this.chart !== 'undefined') {
             this.chart.destroy();
@@ -62,6 +61,7 @@ class ConversionComponent extends React.Component {
             }
         })
     }
+    */
     toBase(amount, rate) {
         return amount * (1 / rate);
     }
@@ -117,7 +117,7 @@ class ConversionComponent extends React.Component {
                             <div className='inputs-text'>{currencies[baseAcronym].symbol}</div>
                         </div>
                         <input id='base-currency' className='form-control' value={baseValue} onChange={this.changeBaseValue} type='number' />
-                        <small>(currencies[baseAcronym].name</small>
+                        <small>{currencies[baseAcronym].name}</small>
                    </div>
                    <div className='col-md-2 d-flex justify-content-center align-items-center'>
                        <h4>=</h4>
@@ -130,7 +130,7 @@ class ConversionComponent extends React.Component {
                             <div className='inputs-text'>{currencies[quoteAcronym].symbol}</div>
                         </div>
                         <input id='quote-currency' className='form-control' value={quoteValue} onChange={this.changeQuoteValue} type='number' />
-                        <small>(currencies[quoteAcronym].name</small>
+                        <small>{currencies[quoteAcronym].name}</small>
                    </div>
                 </form>
                 <canvas ref={this.chartRef} />
@@ -139,4 +139,4 @@ class ConversionComponent extends React.Component {
     }
 }
 
-export default ConversionComponent
+export default ConversionComponent;
