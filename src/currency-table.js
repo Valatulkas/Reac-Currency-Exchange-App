@@ -17,8 +17,8 @@ const CurrencyTable = (props) => {
             <tbody>
                 {rates.map(currency => 
                     <tr key={currency.acronym}>
-                        <td>{currency.name} {currency.acronym}</td>
-                        <td><Link to={`/main-component?base=${base}&quote=${currency.acronym}`}>{currency.rate.toFixed(6)}</Link></td>
+                        <td>{currency.name} ({currency.acronym})</td>
+                        <td><Link to={`/conversion-component?base=${base}&quote=${currency.acronym}`}>{currency.rate.toFixed(2)}</Link></td>
                     </tr>
                 )}
             </tbody>

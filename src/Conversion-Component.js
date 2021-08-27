@@ -105,10 +105,11 @@ class ConversionComponent extends React.Component {
         return (
             <React.Fragment>
                 <div>
-                    <h3>Convert Your Currencies</h3>
-                    <h4>1 {baseAcronym} to 1 {quoteAcronym} = {rate.toFixed(4)} {currencies[quoteAcronym].name}</h4>
+                    <h3 className='align-self-center justify-self-center'><b>Convert Your Currencies</b><br/>{baseAcronym} to {quoteAcronym} = {rate.toFixed(2)} {currencies[quoteAcronym].name}</h3>
                 </div>
                 <form className='bg-light justify-content-center'>
+                <div className='row'>
+                    <div className='col-md-3'></div>
                     <div className='col-md-6 form-group'>
                         <select value={baseAcronym} onChange={this.changeBaseAcronym} className='form-control' disabled={loading}>
                             {currencyList}
@@ -118,19 +119,25 @@ class ConversionComponent extends React.Component {
                         </div>
                         <input id='base-currency' className='form-control' value={baseValue} onChange={this.changeBaseValue} type='number' />
                         <small>{currencies[baseAcronym].name}</small>
-                   </div>
-                   <div className='col-md-2 d-flex justify-content-center align-items-center'>
+                    </div>
+                   <div className='col-md-3'></div>
+                </div>
+                   <div className='col-md-12 d-flex justify-content-center align-items-center'>
                        <h4>=</h4>
                    </div>
-                   <div className='col-md-6 form-group'>
-                       <select value={quoteAcronym} onChange={this.changeQuoteAcronym} className='form-control' disabled={loading}>
-                           {currencyList}
-                       </select>
-                       <div className='inputs'>
+                   <div className='row'>
+                        <div className='col-md-3'></div>
+                        <div className='col-md-6 form-group'>
+                            <select value={quoteAcronym} onChange={this.changeQuoteAcronym} className='form-control' disabled={loading}>
+                                {currencyList}
+                            </select>
+                        <div className='inputs'>
                             <div className='inputs-text'>{currencies[quoteAcronym].symbol}</div>
                         </div>
                         <input id='quote-currency' className='form-control' value={quoteValue} onChange={this.changeQuoteValue} type='number' />
                         <small>{currencies[quoteAcronym].name}</small>
+                   </div>
+                   <div className='col-md-3'></div>
                    </div>
                 </form>
                 <canvas ref={this.chartRef} />

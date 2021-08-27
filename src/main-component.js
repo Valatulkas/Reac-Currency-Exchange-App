@@ -21,7 +21,7 @@ class MainComponent extends React.Component {
     }
     getRatesData = (base) => {
         this.setState({ loading: true });
-        fetch('https://altexchangerateapi.heroku.com/latest?from=${base}')
+        fetch('https://altexchangerateapi.herokuapp.com/latest?from=${base}')
             .then(checkStatus)
             .then(json)
             .then(data => {
