@@ -21,13 +21,14 @@ class MainComponent extends React.Component {
     }
     getRatesData = (base) => {
         this.setState({ loading: true });
-        fetch('https://altexchangerateapi.herokuapp.com/latest?from=${base}')
+        fetch('https://altexchangerateapi.herokuapp.com/latest?from=USD')
             .then(checkStatus)
             .then(json)
             .then(data => {
                 if (data.error) {
                     throw new Error(data.error);
                 }
+                console.log(data);
                 const rates = Object.keys(data.rates)
                     .filter(acronym => acronym !== base)
                     .map(acronym => ({
@@ -44,8 +45,8 @@ class MainComponent extends React.Component {
         const { base, rates, loading } = this.state;
         return (
             <React.Fragment>
-                <form className="p-3 bg-light form-inline justify-content-center">
-                    <h3 className="mb-2">Base currency: <b className="mr-2">1</b></h3>
+                <form className="p-3 mb-4 bg-light form-inline justify-content-center">
+                    <h3 className="mb-3">Base currency: <b className="mr-2">1</b></h3>
                     <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading}>
                         {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}
                     </select>

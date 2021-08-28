@@ -41,6 +41,9 @@ footer {
   border-radius: 18% 18% 0% 0%;
 
 }
+td, th {
+  text-align: center;
+}
 footer>a {
   align-items: center;
   vertical-align: middle;
@@ -60,7 +63,10 @@ a, #logo {
 a:hover {
   text-decoration:honeydew;
 }
-
+td > a {
+  color: darkslategray;
+  text-decoration: none;
+}
 /* REFRESH button rotation */
 .purple {
   pointer-events: none;
