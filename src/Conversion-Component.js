@@ -21,7 +21,9 @@ class ConversionComponent extends React.Component {
     }
     getRate = (base, quote) => {
         this.setState({ loading: true });
-        fetch("https://altexchangerateapi.herokuapp.com/latest?from=USD")
+
+        /* cannot reconcile ${base} or ${quote} in request */
+        fetch("https://altexchangerateapi.herokuapp.com/latest?from=${base}to={quote}")
             .then(checkStatus)
             .then(json)
             .then(data => {
