@@ -7,6 +7,9 @@ hr {
 #root, .honeydew {
   background-color: honeydew;
 }
+.component-border {
+  border-radius: 16% ;
+}
 .clams {
   font-family: 'Courier New', Courier, monospace;
   color: antiquewhite;

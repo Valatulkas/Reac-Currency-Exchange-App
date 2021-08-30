@@ -16,14 +16,12 @@ class ConversionComponent extends React.Component {
         this.chartRef = React.createRef();
     }
     componentDidMount () {
-        const { baseAcronym, quoteAcronym} = this.state;
+        const { baseAcronym, quoteAcronym } = this.state;
         this.getRate(baseAcronym, quoteAcronym);
     }
     getRate = (base, quote) => {
         this.setState({ loading: true });
-
-        /* cannot reconcile ${base} or ${quote} in request */
-        fetch("https://altexchangerateapi.herokuapp.com/latest?from=${base}to={quote}")
+        fetch(`https://altexchangerateapi.herokuapp.com/latest?from=${base}to=${quote}`)
             .then(checkStatus)
             .then(json)
             .then(data => {

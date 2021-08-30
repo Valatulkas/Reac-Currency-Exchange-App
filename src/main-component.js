@@ -21,9 +21,7 @@ class MainComponent extends React.Component {
     }
     getRatesData = (base) => {
         this.setState({ loading: true });
-        
-        /* cannot reconcile ${base} */
-        fetch('https://altexchangerateapi.herokuapp.com/latest?from=${base}')
+        fetch(`https://altexchangerateapi.herokuapp.com/latest?from=${base}`)
             .then(checkStatus)
             .then(json)
             .then(data => {
@@ -50,7 +48,7 @@ class MainComponent extends React.Component {
                 <form className="p-3 mb-4 bg-light form-inline justify-content-center">
                     <h3 className="mb-3">Base currency: <b className="mr-2">1</b></h3>
                     <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading}>
-                        {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}
+                        {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}    
                     </select>
                 </form>
                 <CurrencyTable base={base} rates={rates} />
