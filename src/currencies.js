@@ -1,135 +1,135 @@
 const currencies = {
   AUD: {
     symbol: '$',
-    name: 'Australian Dollar',
+    name: 'Australian Dollar 🇦🇺',
   },
   BGN: {
     symbol: 'лв',
-    name: 'Bulgarian Lev',
+    name: 'Bulgarian Lev 🇧🇬',
   },
   BRL: {
     symbol: 'R$',
-    name: 'Brazilian Real',
+    name: 'Brazilian Real 🇧🇷',
   },
   CAD: {
     symbol: '$',
-    name: 'Canadian Dollar',
+    name: 'Canadian Dollar 🇨🇦',
   },
   CHF: {
     symbol: 'Fr',
-    name: 'Swiss Franc',
+    name: 'Swiss Franc 🇨🇭',
   },
   CNY: {
     symbol: '¥',
-    name: 'Chinese Yuan',
+    name: 'Chinese Yuan 🇨🇳',
   },
   CZK: {
     symbol: 'Kč',
-    name: 'Czech Koruna',
+    name: 'Czech Koruna 🇨🇿',
   },
   DKK: {
     symbol: 'kr',
-    name: 'Danish Krone',
+    name: 'Danish Krone 🇩🇰',
   },
   EUR: {
     symbol: '€',
-    name: 'Euro',
+    name: 'Euro 🇪🇺',
   },
   GBP: {
     symbol: '£',
-    name: 'British Pound',
+    name: 'British Pound 🇬🇧',
   },
   HKD: {
     symbol: '$',
-    name: 'Hong Kong Dollar',
+    name: 'Hong Kong Dollar 🇭🇰',
   },
   HRK: {
     symbol: 'kn',
-    name: 'Croatian Kuna',
+    name: 'Croatian Kuna 🇭🇷',
   },
   HUF: {
     symbol: 'Ft',
-    name: 'Hungarian Forint',
+    name: 'Hungarian Forint 🇭🇺',
   },
   IDR: {
     symbol: 'Rp',
-    name: 'Indonesian Rupiah',
+    name: 'Indonesian Rupiah 🇮🇩',
   },
   ILS: {
     symbol: '₪',
-    name: 'Israeli New Shekel',
+    name: 'Israeli New Shekel 🇮🇱',
   },
   INR: {
     symbol: '₹',
-    name: 'Indian Supee',
+    name: 'Indian Supee 🇮🇳',
   },
   ISK: {
     symbol: 'kr',
-    name: 'Icelandic Króna',
+    name: 'Icelandic Króna 🇮🇸',
   },
   JPY: {
     symbol: '¥',
-    name: 'Japanese Yen',
+    name: 'Japanese Yen 🇯🇵',
   },
   KRW: {
     symbol: '₩',
-    name: 'South Korean Won',
+    name: 'South Korean Won 🇰🇷',
   },
   MXN: {
     symbol: '$',
-    name: 'Mexican Peso',
+    name: 'Mexican Peso 🇲🇽',
   },
   MYR: {
     symbol: 'RM',
-    name: 'Malaysian Ringgit',
+    name: 'Malaysian Ringgit 🇲🇾',
   },
   NOK: {
     symbol: 'kr',
-    name: 'Norwegian Krone',
+    name: 'Norwegian Krone 🇳🇴',
   },
   NZD: {
     symbol: '$',
-    name: 'New Zealand Dollar',
+    name: 'New Zealand Dollar 🇳🇿',
   },
   PHP: {
     symbol: '₱',
-    name: 'Philippine Peso',
+    name: 'Philippine Peso 🇵🇭',
   },
   PLN: {
     symbol: 'zł',
-    name: 'Polish Złoty ',
+    name: 'Polish Złoty 🇵🇱',
   },
   RON: {
     symbol: 'lei',
-    name: 'Romanian Leu',
+    name: 'Romanian Leu 🇷🇴',
   },
   RUB: {
     symbol: '₽',
-    name: 'Russian Ruble',
+    name: 'Russian Ruble 🇷🇺',
   },
   SEK: {
     symbol: 'kr',
-    name: 'Swedish Krona',
+    name: 'Swedish Krona 🇸🇪',
   },
   SGD: {
     symbol: '$',
-    name: 'Singapore Dollar',
+    name: 'Singapore Dollar 🇸🇬',
   },
   THB: {
     symbol: '฿',
-    name: 'Thai Baht',
+    name: 'Thai Baht 🇹🇭',
   },
   TRY: {
     symbol: '₺',
-    name: 'Turkish Lira',
+    name: 'Turkish Lira 🇹🇷',
   },
   USD: {
     symbol: '$',
-    name: 'United States Dollar',
+    name: 'United States Dollar 🇺🇸',
   },
   ZAR: {
     symbol: 'R',
-    name: 'South African Rand',
+    name: 'South African Rand 🇿🇦',
   },
 }
 

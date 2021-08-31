@@ -100,11 +100,11 @@ class SingleConversion extends React.Component {
         <React.Fragment>
             <form>
                 <div className='row'>
-                    <div className='col-3'></div>
-                    <h3 className='col-6 p-3 px-5 mb-4 border text-center align-self-center justify-self-center' id="single-title" style={{color: 'antiquewhite'}}>
+                    <div className='col-2'></div>
+                    <h3 className='col-8 p-3 px-5 mb-4 border text-center align-self-center justify-self-center' id="single-title" style={{color: 'antiquewhite'}}>
                         <b>Convert Your Currencies</b><br/>1 {currencies[baseAcronym].name} = {rate.toFixed(2)} {currencies[quoteAcronym].name}
                     </h3>
-                    <div className='col-3'></div>
+                    <div className='col-2'></div>
                 </div>
                 <div className='row '>
                     <div className='col-md-3 honeydew'></div>
