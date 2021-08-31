@@ -28,7 +28,6 @@ li {
 }
 #currency-conversion {
   margin-top: 18px;
-  border-color: darkblue;
 }
 .main-heading {
   color: darkblue;
@@ -48,7 +47,6 @@ footer {
   height: 80px;
   background-color:darkslategray;
   border-radius: 18% 18% 0% 0%;
-
 }
 form {
   margin-right: auto;
@@ -57,9 +55,21 @@ form {
 #single-title, #second-title, #chart-head, #chart {
   background-color: darkslategray;
 }
-#one-on-one {
+#single-title {
   border-style: solid;
   border-width: thick;
+  border-color: darkolivegreen darkolivegreen darkslategrey;
+  border-radius: 42% 42% 0% 0%;
+}
+#second-title {
+  border-style: solid;
+  border-width: thick;
+  border-color: darkslategrey darkolivegreen darkolivegreen darkolivegreen;
+  border-radius: 0% 0% 38% 38%;
+}
+#one-on-one {
+  border-style: solid;
+  border-width: thin;
   border-color: olive;
   border-radius: 48%;
 }

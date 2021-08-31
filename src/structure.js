@@ -6,16 +6,19 @@ const Skeleton = (props) => {
             <nav className="navbar">
                 <div className='container'>
                     <div className='row px-4 mx-4' id='logo'>
-                        <i class="fas fa-search-dollar fa-4x"></i>
+                        <i class="fas fa-money-bill-alt fa-3x"></i>
+                    </div>
+                    <div className='row px-4 mx-4' id='logo'>
+                        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
                     </div>
                     <div className='row'>
-                        <h1 className='clams'>Smart Wallet</h1>
+                        <h1 className='clams'>Smart <i class="fas fa-wallet"></i> Wallet</h1>
                     </div>
-                    <div className='row  px-4 mx-4'>
-                        <a href=' ' alt='refresh-button'>
-                            <h5 className='text-center'><small>reset</small></h5>
-                            <i class="fas fa-sync-alt fa-3x purple"></i>
-                        </a>
+                    <div className='row px-4 mx-4' id='logo'>
+                        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                    </div>
+                    <div className='row px-4 mx-4' id='logo'>
+                        <i class="far fa-money-bill-alt fa-3x"></i>
                     </div>
                 </div>
             </nav>

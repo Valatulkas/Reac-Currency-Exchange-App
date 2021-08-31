@@ -1,8 +1,12 @@
 import React from 'react';
 import currencies from './currencies';
 import { checkStatus, json } from './utils';
+/*
+import CircleType from "circletype";
+*/
 
 class SingleConversion extends React.Component {
+    
   constructor(props) {
     super(props);
 
@@ -95,16 +99,21 @@ class SingleConversion extends React.Component {
     const { rate, baseAcronym, baseValue, quoteAcronym, quoteValue, loading } = this.state;
 
     const currencyList = Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>);
+        
 
     return (
+        /*
+        new CircleType(document.getElementById('arc'))
+            .radius(384),
+        */
         <React.Fragment>
             <div className='mt-5'>
                 <div className='text-center row'>
-                    <div className='col-0 col-md-3'></div>
-                    <div className='col-12 col-md-6' id="single-title">
-                        <h2 className='' style={{color: 'antiquewhite'}}>
-                            <b>Convert Your Currencies</b>     
-                        </h2>
+                    <div className='col-0 col-md-2'></div>
+                    <div className='col-12 col-md-8' id="single-title">
+                        <h1 className='pt-4' style={{color: 'antiquewhite'}} id="arc">
+                            <b>CONVERT     YOUR    CA$H</b>     
+                        </h1>
                         <br/>
                         <h3 id="one-on-one" style={{color: 'antiquewhite'}} className='py-4'>
                             1 {currencies[baseAcronym].name} {currencies[baseAcronym].flag} 
@@ -112,12 +121,12 @@ class SingleConversion extends React.Component {
                             {rate.toFixed(2)} {currencies[quoteAcronym].name}s {currencies[quoteAcronym].flag}
                         </h3>
                     </div>
-                    <div className='col-0 col-md-3'></div>  
+                    <div className='col-0 col-md-2'></div>  
                 </div>
                 <form>
                 <div className='row mt-0 pt-0'>
-                    <div className='col-0 col-md-3'></div>
-                    <div className='col-12 col-md-6 text-center form-group pt-5' id="second-title">
+                    <div className='col-0 col-md-2'></div>
+                    <div className='col-12 col-md-8 text-center form-group pt-3 pb-4' id="second-title">
                         <div>
                             <select value={baseAcronym} onChange={this.changeBaseAcronym} className='form-control my-2' disabled={loading}>
                                 {currencyList}
@@ -145,14 +154,13 @@ class SingleConversion extends React.Component {
                                 </div>
                                 <input id='quote-currency' className='form-control' value={quoteValue} onChange={this.changeQuoteValue} type='number' />
                             </div>
-                            <h4 style={{color: 'antiquewhite'}}>{currencies[quoteAcronym].name}s</h4>
+                            <h4 style={{color: 'antiquewhite'}} className='pb-5'>{currencies[quoteAcronym].name}s</h4>
                         </div>
                     </div>
-                    <div className='col-0 col-md-3'></div>
+                    <div className='col-0 col-md-2'></div>
                 </div>
             </form>
             </div>
-            <canvas ref={this.chartRef} />
         </React.Fragment>
     )
   }
