@@ -4,11 +4,11 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#root, .honeydew {
+#root {
   background-color: honeydew;
 }
-#chart-head > h3 {
-  color: antiquewhite;
+#single-title, #chart-head, table {
+  font-family: 'Jura', sans-serif;
 }
 .clams {
   font-family: 'Courier New', Courier, monospace;
@@ -20,7 +20,6 @@ tr, th {
   padding-right: 20%;
   margin-left: 20%;
   margin-right: 20%;
-
 }
 li {
   display: inline-block;
@@ -57,11 +56,14 @@ form {
 }
 #single-title, #second-title, #chart-head, #chart {
   background-color: darkslategray;
+}
+#one-on-one {
+  border-style: solid;
+  border-width: thick;
+  border-color: olive;
+  border-radius: 48%;
+}
 
-}
-#single-title {
-  margin-top: 60px;
-}
 td, th {
   text-align: center;
 }

@@ -36,6 +36,7 @@ class MainComponent extends React.Component {
                         rate: data.rates[acronym],
                         name: currencies[acronym].name,
                         symbol: currencies[acronym].symbol,
+                        flag: currencies[acronym].flag,
                     }))
                 this.setState({ rates, loading: false });
             })
@@ -50,9 +51,9 @@ class MainComponent extends React.Component {
                         <div className='col-md-3'></div>
                         <div className='col-md-6'>
                             <form className="p-3 px-5 mb-4 form-control" id="chart-head">
-                                <h3 className="mb-3">Base currency</h3>
+                                <h2 className="mb-3" style={{color: 'antiquewhite'}}>Select Your Base currency</h2>
                                 <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading} >
-                                    {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym} >{currencyAcronym}</option>)}    
+                                    {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}    
                                 </select>
                              </form>
                         </div>

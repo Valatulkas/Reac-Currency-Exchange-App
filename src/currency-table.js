@@ -8,11 +8,14 @@ const CurrencyTable = (props) => {
     }
     return (
         
-        <table className='table table-sm mb-5' id='chart'>
+        <table className='table table-lg mb-5' id='chart'>
             <thead> 
                 <tr>
-                    <th style={{color: 'antiquewhite'}}>Currency</th>
-                    <th style={{color: 'antiquewhite'}}>1.00 {base}</th>
+                    <th style={{color: 'antiquewhite'}}><h3><b>Currency</b></h3></th>
+
+                    <th style={{color: 'antiquewhite'}}>***{base.flag}***</th>    
+
+                    <th style={{color: 'antiquewhite'}}><h3><b>1.00 {base}</b></h3></th>
                 </tr>
 
                 
@@ -20,8 +23,17 @@ const CurrencyTable = (props) => {
             <tbody>
                 {rates.map(currency => 
                     <tr key={currency.acronym}>
-                        <td style={{color: 'antiquewhite'}} >{currency.name}</td>
-                        <td ><Link to={`/conversion-component?base=${base}&quote=${currency.acronym}`} style={{color: 'antiquewhite'}}>{currency.rate.toFixed(2)} {currency.acronym}</Link></td>
+                        <td style={{color: 'antiquewhite'}}>
+                            <b>
+                                {currency.name} 
+                            </b>
+                        </td>
+                        <td><h3>{currency.flag}</h3></td>
+                        <td >
+                            <Link to={`/conversion-component?base=${base}&quote=${currency.acronym}`} style={{color: 'antiquewhite'}}> 
+                                <b>{currency.rate.toFixed(2)} {currency.acronym}</b>
+                            </Link>
+                        </td>
                     </tr>
                 )}
             </tbody>
