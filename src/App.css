@@ -7,13 +7,20 @@ hr {
 #root, .honeydew {
   background-color: honeydew;
 }
-.component-border {
-  border-radius: 16% ;
+#chart-head > h3 {
+  color: antiquewhite;
 }
 .clams {
   font-family: 'Courier New', Courier, monospace;
   color: antiquewhite;
   font-size: 60px;
+}
+tr, th {
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+
 }
 li {
   display: inline-block;
@@ -44,6 +51,17 @@ footer {
   border-radius: 18% 18% 0% 0%;
 
 }
+form {
+  margin-right: auto;
+  margin-left: auto;
+}
+#single-title, #second-title, #chart-head, #chart {
+  background-color: darkslategray;
+
+}
+#single-title {
+  margin-top: 60px;
+}
 td, th {
   text-align: center;
 }
@@ -51,13 +69,11 @@ footer>a {
   align-items: center;
   vertical-align: middle;
 }
-#component-border {
+table {
   border-style: solid;
-  border-width: thin;
+  border-width: thick;
   border-color: olive;
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-bottom: 5;
 }
 a, #logo {
   color: white;

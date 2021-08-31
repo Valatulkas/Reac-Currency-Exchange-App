@@ -7,20 +7,21 @@ const CurrencyTable = (props) => {
         return null;
     }
     return (
-        <table className='table table-md'>
-            <thead>
+        
+        <table className='table table-sm mb-5' id='chart'>
+            <thead> 
                 <tr>
-                    <th scope='col'>Currency</th>
-                    <th scope='col'>1.00 {base}</th>
+                    <th style={{color: 'antiquewhite'}}>Currency</th>
+                    <th style={{color: 'antiquewhite'}}>1.00 {base}</th>
                 </tr>
+
+                
             </thead>
             <tbody>
                 {rates.map(currency => 
                     <tr key={currency.acronym}>
-                        
-                            <td>{currency.name}</td>
-                            <td><Link to={`/conversion-component?base=${base}&quote=${currency.acronym}`}>{currency.rate.toFixed(2)} {currency.acronym}</Link></td>
-                       
+                        <td style={{color: 'antiquewhite'}} >{currency.name}</td>
+                        <td ><Link to={`/conversion-component?base=${base}&quote=${currency.acronym}`} style={{color: 'antiquewhite'}}>{currency.rate.toFixed(2)} {currency.acronym}</Link></td>
                     </tr>
                 )}
             </tbody>

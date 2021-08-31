@@ -2,7 +2,7 @@ import React from 'react';
 import currencies from './currencies';
 import { checkStatus, json } from './utils';
 
-class AllCurrencies extends React.Component {
+class SingleConversion extends React.Component {
   constructor(props) {
     super(props);
 
@@ -98,38 +98,40 @@ class AllCurrencies extends React.Component {
 
     return (
         <React.Fragment>
-            <div>
-                <div className='col-3'></div>
-                <h3 className='col-6 border py-4 my-3 text-center align-self-center justify-self-center' style={{backgroundColor: 'lightgrey'}}><b>Convert Your Currencies</b><br/>{baseAcronym} to {quoteAcronym} = {rate.toFixed(2)} {currencies[quoteAcronym].name}</h3>
-                <div className='col-3'></div>
-            </div>
             <form>
+                <div className='row'>
+                    <div className='col-3'></div>
+                    <h3 className='col-6 p-3 px-5 mb-4 border text-center align-self-center justify-self-center' id="single-title" style={{color: 'antiquewhite'}}>
+                        <b>Convert Your Currencies</b><br/>1 {currencies[baseAcronym].name} = {rate.toFixed(2)} {currencies[quoteAcronym].name}
+                    </h3>
+                    <div className='col-3'></div>
+                </div>
                 <div className='row '>
-                    <div className='col-md-2 honeydew'></div>
-                    <div className='col-md-8 border py-4 my-2 rounded text-center form-group' style={{backgroundColor: 'lightgrey'}}>
+                    <div className='col-md-3 honeydew'></div>
+                    <div className='col-md-6  p-3 px-5 mb-4 rounded text-center form-group' id="second-title">
                         <div id="component-border">
                             <select value={baseAcronym} onChange={this.changeBaseAcronym} className='form-control' disabled={loading}>
                                 {currencyList}
                             </select>
-                            <div className='inputs'>
+                            <div className='inputs' style={{color: 'antiquewhite'}}>
                                 <div className='inputs-text'>{currencies[baseAcronym].symbol}</div>
                             </div>
                             <input id='base-currency' className='form-control' value={baseValue} onChange={this.changeBaseValue} type='number' />
-                            <small>{currencies[baseAcronym].name}</small>
+                            <small style={{color: 'antiquewhite'}}>{currencies[baseAcronym].name}</small>
                         </div>
-                        <span className="mx-3">=</span>
+                        <span className="mx-3" style={{color: 'antiquewhite'}}>=</span>
                         <div id='component-border'>
                             <select value={quoteAcronym} onChange={this.changeQuoteAcronym} className='form-control' disabled={loading}>
                                 {currencyList}
                             </select>
                             <div className='inputs'>
-                                <div className='inputs-text'>{currencies[quoteAcronym].symbol}</div>
+                                <div className='inputs-text' style={{color: 'antiquewhite'}} >{currencies[quoteAcronym].symbol}</div>
                             </div>
                             <input id='quote-currency' className='form-control' value={quoteValue} onChange={this.changeQuoteValue} type='number' />
-                            <small>{currencies[quoteAcronym].name}</small>
+                            <small style={{color: 'antiquewhite'}}>{currencies[quoteAcronym].name}</small>
                         </div>
                     </div>
-                    <div className='col-md-2 honeydew'></div>
+                    <div className='col-md-3 honeydew'></div>
                 </div>
             </form>
             <canvas ref={this.chartRef} />
@@ -138,4 +140,4 @@ class AllCurrencies extends React.Component {
   }
 }
 
-export default AllCurrencies
+export default SingleConversion

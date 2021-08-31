@@ -45,12 +45,20 @@ class MainComponent extends React.Component {
         const { base, rates, loading } = this.state;
         return (
             <React.Fragment>
-                <form className="p-3 mb-4 bg-light form-inline justify-content-center">
-                    <h3 className="mb-3">Base currency: <b className="mr-2">1</b></h3>
-                    <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading}>
-                        {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}    
-                    </select>
-                </form>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-md-3'></div>
+                        <div className='col-md-6'>
+                            <form className="p-3 px-5 mb-4 form-control" id="chart-head">
+                                <h3 className="mb-3">Base currency</h3>
+                                <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading} >
+                                    {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym} >{currencyAcronym}</option>)}    
+                                </select>
+                             </form>
+                        </div>
+                        <div className='col-md-3'></div>
+                    </div>
+                </div>
                 <CurrencyTable base={base} rates={rates} />
             </React.Fragment>
         )
