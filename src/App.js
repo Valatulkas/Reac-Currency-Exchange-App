@@ -10,9 +10,8 @@ const App = () => {
   return (
     <Router>
       <Skeleton>
-        <Route path='/' exact component={SingleConversion} />
-        <hr className='my-5'/>
-        <Route path='/' component={MainComponent} />
+        <Route path='/conversion-component' exact component={SingleConversion} />
+        <Route path='/main-component' component={MainComponent} />
       </Skeleton>
     </Router>
 
