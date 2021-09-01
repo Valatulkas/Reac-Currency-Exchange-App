@@ -1,25 +1,26 @@
 import React from 'react';
-    
+import { NavLink } from 'react-router-dom';
+
 const Skeleton = (props) => {
     return (
         <React.Fragment>
             <nav className="navbar">
-                <div className='container'>
-                    <div className='row px-4 mx-4' id='logo'>
-                        <i class="fas fa-money-bill-alt fa-3x"></i>
-                    </div>
-                    <div className='row px-4 mx-4' id='logo'>
-                        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
-                    </div>
-                    <div className='row'>
-                        <h1 className='clams'>Smart <i class="fas fa-wallet"></i> Wallet</h1>
-                    </div>
-                    <div className='row px-4 mx-4' id='logo'>
-                        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
-                    </div>
-                    <div className='row px-4 mx-4' id='logo'>
-                        <i class="far fa-money-bill-alt fa-3x"></i>
-                    </div>
+                <div className='container' id='logo'>
+                        <div className='col-12 col-md-3' id='onevone'>
+                            <i className="fas fa-money-bill-alt fa-2x"></i>
+                            <i class="fas fa-sync-alt fa-2x purple px-4"></i>
+                            <i className="far fa-money-bill-alt fa-2x"></i>
+                            <br/>
+                            <NavLink to='./conversion-component'><small>CURRENCY TO CURRENCY</small></NavLink>
+                        </div>
+                        <div className='col-12 col-md-6'>
+                            <h1 className='clams'>Smart Wallet</h1>
+                        </div>
+                        <div className='col-12 col-md-3' id="all-currency">
+                            <i class="fas fa-globe-americas purple fa-3x"></i>
+                            <br/>
+                            <NavLink to='./main-component'><small>ALL CURRENCIES</small></NavLink>
+                        </div>
                 </div>
             </nav>
             <div className='container' id='main-content'>

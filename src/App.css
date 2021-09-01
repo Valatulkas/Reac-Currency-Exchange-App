@@ -26,6 +26,10 @@ li {
   align-items: center;
   text-align: center;
 }
+#onevone, #all-currency {
+  text-align: center;
+  vertical-align: center;
+} 
 #currency-conversion {
   margin-top: 18px;
 }
@@ -41,12 +45,17 @@ nav {
   top: 0;
   background-color: darkslategray;
   border-radius: 0% 0% 23% 23%;
+  border-bottom-color: darkolivegreen;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
 }
 footer {
   bottom: 0;
-  height: 80px;
   background-color:darkslategray;
   border-radius: 18% 18% 0% 0%;
+  border-top-color: darkolivegreen;
+  border-top-style: solid;
+  border-top-width: thick;
 }
 form {
   margin-right: auto;
@@ -73,7 +82,11 @@ form {
   border-color: olive;
   border-radius: 48%;
 }
-
+#chart, #chart-head {
+  border-style: solid;
+  border-width: thick;
+  border-color: darkolivegreen;
+}
 td, th {
   text-align: center;
 }
@@ -88,7 +101,7 @@ table {
   margin-bottom: 5;
 }
 a, #logo {
-  color: white;
+  color: antiquewhite;
   text-decoration: none;
 }
 a:hover {

@@ -107,10 +107,10 @@ class SingleConversion extends React.Component {
             .radius(384),
         */
         <React.Fragment>
-            <div className='mt-5'>
+            <div className='m-5'>
                 <div className='text-center row'>
                     <div className='col-0 col-md-2'></div>
-                    <div className='col-12 col-md-8' id="single-title">
+                    <div className='col-12 col-md-8 ' id="single-title">
                         <h1 className='pt-4' style={{color: 'antiquewhite'}} id="arc">
                             <b>CONVERT     YOUR    CA$H</b>     
                         </h1>
@@ -126,7 +126,7 @@ class SingleConversion extends React.Component {
                 <form>
                 <div className='row mt-0 pt-0'>
                     <div className='col-0 col-md-2'></div>
-                    <div className='col-12 col-md-8 text-center form-group pt-3 pb-4' id="second-title">
+                    <div className='col-12 col-md-8 text-center form-group pt-3 pb-4 px-5' id="second-title">
                         <div>
                             <select value={baseAcronym} onChange={this.changeBaseAcronym} className='form-control my-2' disabled={loading}>
                                 {currencyList}
