@@ -13,13 +13,16 @@ const CurrencyTable = (props) => {
                 <div className='col-md-8'>
                     <table className='table mb-5' id='chart'>
                         <thead> 
-                            <tr>
-                                <th style={{color: 'antiquewhite'}}><h3><b>Currency</b></h3></th>
+                            
+                                <tr>
+                                    <th style={{color: 'antiquewhite'}}><h3><b>Currency</b></h3></th>
+                                    
+                                    {rates.some(currency => 
+                                        <th key={currency.acronym}><b>{currency.flag}</b></th>
+                                    )}
 
-                                <th style={{color: 'antiquewhite'}}>***{base.flag}***</th>    
-
-                                <th style={{color: 'antiquewhite'}}><h3><b>1.00 {base}</b></h3></th>
-                            </tr>
+                                    <th style={{color: 'antiquewhite'}}><h3><b>1.00 {base}</b></h3></th>
+                                </tr>
                         </thead>
                         <tbody>
                             {rates.map(currency => 

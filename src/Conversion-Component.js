@@ -107,26 +107,14 @@ class SingleConversion extends React.Component {
             .radius(384),
         */
         <React.Fragment>
-            <div className='m-5'>
+            
                 <div className='text-center row'>
                     <div className='col-0 col-md-2'></div>
-                    <div className='col-12 col-md-8 ' id="single-title">
-                        <h1 className='pt-4' style={{color: 'antiquewhite'}} id="arc">
-                            <b>CONVERT     YOUR    CA$H</b>     
-                        </h1>
+                    <div className='col-12 col-md-8 p-3 px-5 mt-5 rounded' id="single-title">
+                        <h2 className='mb-3' style={{color: 'antiquewhite'}} id="arc">
+                            <b>C u r r e n c y &nbsp; C o n v e r s i o n</b>     
+                        </h2>
                         <br/>
-                        <h3 id="one-on-one" style={{color: 'antiquewhite'}} className='py-4'>
-                            1 {currencies[baseAcronym].name} {currencies[baseAcronym].flag} 
-                            <br/> = <br/> 
-                            {rate.toFixed(2)} {currencies[quoteAcronym].name}s {currencies[quoteAcronym].flag}
-                        </h3>
-                    </div>
-                    <div className='col-0 col-md-2'></div>  
-                </div>
-                <form>
-                <div className='row mt-0 pt-0'>
-                    <div className='col-0 col-md-2'></div>
-                    <div className='col-12 col-md-8 text-center form-group pt-3 pb-4 px-5' id="second-title">
                         <div>
                             <select value={baseAcronym} onChange={this.changeBaseAcronym} className='form-control my-2' disabled={loading}>
                                 {currencyList}
@@ -154,13 +142,28 @@ class SingleConversion extends React.Component {
                                 </div>
                                 <input id='quote-currency' className='form-control' value={quoteValue} onChange={this.changeQuoteValue} type='number' />
                             </div>
-                            <h4 style={{color: 'antiquewhite'}} className='pb-5'>{currencies[quoteAcronym].name}s</h4>
+                            <h4 style={{color: 'antiquewhite'}}>{currencies[quoteAcronym].name}s</h4>
                         </div>
+                        
                     </div>
-                    <div className='col-0 col-md-2'></div>
+                    <div className='col-0 col-md-2'></div>  
+                </div>
+                <div className='text-center my-4'>
+                  <i class="far fa-arrow-alt-circle-down fa-4x" style={{color: 'darkolivegreen'}}></i>
+                </div>
+                <form>
+                <div className='row mt-0 pt-0'>
+                    <div className='col-0 col-md-3'></div>
+                    <div className='col-12 col-md-6 text-center form-group pt-3 pb-4 px-5 mb-5' id="second-title">
+                    <h3 id="one-on-one" style={{color: 'antiquewhite'}} className='py-4'>
+                            1 {currencies[baseAcronym].name} {currencies[baseAcronym].flag} 
+                            <br/> = <br/> 
+                            {rate.toFixed(2)} {currencies[quoteAcronym].name}s {currencies[quoteAcronym].flag}
+                        </h3>
+                    </div>
+                    <div className='col-0 col-md-3'></div>
                 </div>
             </form>
-            </div>
         </React.Fragment>
     )
   }

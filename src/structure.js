@@ -21,7 +21,7 @@ const Skeleton = (props) => {
                             <i className="far fa-money-bill-alt fa-2x"></i>
                             <br/>
                             <button className='btn btn-success'>
-                                <NavLink to='/conversion-component'><small>CURRENCY TO CURRENCY</small></NavLink>
+                                <NavLink to='/'><small>CURRENCY TO CURRENCY</small></NavLink>
                             </button>
                         </div>
                         <div className='col-12 col-md-6'>

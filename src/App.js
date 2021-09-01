@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <Skeleton>
         
-          <Route path='/conversion-component' component={SingleConversion} />
+          <Route path='/' exact component={SingleConversion} />
             
           
           <Route path='/main-component' component={MainComponent} />

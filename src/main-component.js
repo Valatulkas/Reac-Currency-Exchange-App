@@ -50,8 +50,8 @@ class MainComponent extends React.Component {
                     <div className='row'>
                         <div className='col-md-3'></div>
                         <div className='col-md-6'>
-                            <form className="p-3 px-5 my-4 form-control rounded" id="chart-head">
-                                <h2 className="mb-3" style={{color: 'antiquewhite'}}>Select Your Base currency</h2>
+                            <form className="p-3 px-5 my-5 form-control rounded" id="chart-head">
+                                <h2 className="mb-3" style={{color: 'antiquewhite'}}>BASE CURRENCY SELECTION</h2>
                                 <select value={base} onChange={this.changeBase} className="form-control form-control-lg" disabled={loading} >
                                     {Object.keys(currencies).map(currencyAcronym => <option key={currencyAcronym} value={currencyAcronym}>{currencyAcronym}</option>)}    
                                 </select>

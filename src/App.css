@@ -68,20 +68,13 @@ form {
 #single-title {
   border-style: solid;
   border-width: thick;
-  border-color: darkolivegreen darkolivegreen darkslategrey;
-  border-radius: 42% 42% 0% 0%;
+  border-color: darkolivegreen;
 }
 #second-title {
   border-style: solid;
   border-width: thick;
-  border-color: darkslategrey darkolivegreen darkolivegreen darkolivegreen;
-  border-radius: 0% 0% 38% 38%;
-}
-#one-on-one {
-  border-style: solid;
-  border-width: thin;
-  border-color: olive;
-  border-radius: 48%;
+  border-color: darkolivegreen;
+  border-radius: 50%;
 }
 #chart, #chart-head {
   border-style: solid;
@@ -121,7 +114,7 @@ td > a {
   color: darkslategray;
   text-decoration: none;
 }
-/* REFRESH button rotation */
+/* arrow rotation */
 .purple {
   pointer-events: none;
 }
