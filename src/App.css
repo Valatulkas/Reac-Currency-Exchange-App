@@ -29,9 +29,6 @@ li {
 #onevone, #all-currency {
   text-align: center;
   vertical-align: center;
-  border-color: darkolivegreen;
-  border-width: thin;
-  border-style: solid;
 } 
 #currency-conversion {
   margin-top: 18px;
@@ -90,6 +87,7 @@ form {
   border-style: solid;
   border-width: thick;
   border-color: darkolivegreen;
+  border-radius: 5px;
 }
 td, th {
   text-align: center;
@@ -108,9 +106,16 @@ a, #logo {
   color: antiquewhite;
   text-decoration: none;
 }
-#onevone>a:hover, #all-currency>a:hover, .hmm>a:hover {
+#onevone>a:hover, #all-currency>a:hover, .hmm>a:hover, button {
   color: darkturquoise;
   text-decoration: none;
+}
+.btn-success:hover{
+  background-color: darkturquoise;
+  text-decoration: none;;
+}
+button:focus{
+  outline:none !important;
 }
 td > a {
   color: darkslategray;
