@@ -4,7 +4,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#root {
+#root, body {
   background-color: honeydew;
 }
 #single-title, #chart-head, table {
@@ -29,6 +29,9 @@ li {
 #onevone, #all-currency {
   text-align: center;
   vertical-align: center;
+  border-color: darkolivegreen;
+  border-width: thin;
+  border-style: solid;
 } 
 #currency-conversion {
   margin-top: 18px;
@@ -51,6 +54,7 @@ nav {
 }
 footer {
   bottom: 0;
+  width: 100%;
   background-color:darkslategray;
   border-radius: 18% 18% 0% 0%;
   border-top-color: darkolivegreen;
@@ -104,8 +108,9 @@ a, #logo {
   color: antiquewhite;
   text-decoration: none;
 }
-a:hover {
-  text-decoration:honeydew;
+#onevone>a:hover, #all-currency>a:hover, .hmm>a:hover {
+  color: darkturquoise;
+  text-decoration: none;
 }
 td > a {
   color: darkslategray;

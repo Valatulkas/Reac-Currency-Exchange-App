@@ -29,18 +29,18 @@ const Skeleton = (props) => {
             <footer className='footer'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-4 text-center py-3'>
+                        <div className='col-4 text-center py-3 hmm'>
                             <a href='https://github.com/Valatulkas'>
                                 <i className="fab fa-github fa-3x"></i>
                             </a>
                         </div>
-                        <div className="col-4 text-center py-3">
+                        <div className="col-4 text-center py-3 hmm">
                             <a href="mailto:jfergie93@gmail.com">
                                 <i className="fas fa-paper-plane fa-3x"></i>
                             </a>
                         </div>
-                        <div className="col-4 text-center py-3">
-                            <a href='https://www.chess.com/home'>
+                        <div className="col-4 text-center py-3 hmm">
+                            <a href='https://www.chess.com'>
                                 <i className="fas fa-chess fa-3x"></i>
                             </a>
                         </div>
