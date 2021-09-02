@@ -212,7 +212,7 @@ class SingleConversion extends React.Component {
             <div className='container'>
               <div className='row'>
                 <div className='col-12  mb-5'> 
-                  <canvas id='chart'ref={this.chartRef} />
+                  <canvas id='graph'ref={this.chartRef} />
                 </div>
               </div>
             </div>

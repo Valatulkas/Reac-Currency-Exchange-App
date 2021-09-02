@@ -9,22 +9,27 @@ const Skeleton = (props) => {
             <nav className="navbar">
                 <div className='container' id='logo'>
                         <div className='col-12 col-md-3' id='onevone'>
-                            <i className="fas fa-money-bill-alt fa-2x"></i>
-                            <i className="fas fa-sync-alt fa-2x purple px-4"></i>
-                            <i className="far fa-money-bill-alt fa-2x"></i>
-                            <br/>
                             <button className='btn btn-success'>
-                                <NavLink to='/'><small>CURRENCY TO CURRENCY</small></NavLink>
+                                <NavLink to='/'>
+                                <i className="fas fa-money-bill-alt fa-3x mr-2"></i>
+                                <span>&nbsp;&nbsp;&nbsp;</span>
+                                <i class="fas fa-exchange-alt arrows"></i>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <i className="far fa-money-bill-alt fa-3x ml-4"></i>
+                                </NavLink>
                             </button>
                         </div>
                         <div className='col-12 col-md-6'>
                             <h1 className='clams'>Smart Wallet</h1>
                         </div>
                         <div className='col-12 col-md-3' id="all-currency">
-                            <i className="fas fa-globe-americas purple fa-3x"></i>
-                            <br/>
                             <button className='btn btn-success'>
-                                <NavLink to='/main-component'><small id='reverse-arc'>ALL CURRENCIES</small></NavLink>
+                                <NavLink to='/main-component'>
+                                        <i className="fas fa-globe-americas purple fa-3x"></i>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <i class="fas fa-coins fa-3x">
+                                        </i>
+                                </NavLink>
                             </button>
                         </div>
                 </div>

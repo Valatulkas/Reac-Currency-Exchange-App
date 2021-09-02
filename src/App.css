@@ -27,9 +27,13 @@ li {
 #currency-conversion {
   margin-top: 18px;
 }
-h2, h1, h3, .clams {
+h2, h1, h3, .clams, #center {
   text-align: center;
   margin: auto;
+}
+.center-please {
+ justify-content: center;
+  vertical-align: middle;
 }
 nav {
   top: 0;
@@ -52,10 +56,10 @@ form {
   margin-right: auto;
   margin-left: auto;
 }
-#single-title, #second-title, #chart-head {
+#single-title, #second-title, #chart-head, #chart {
   background-color: darkslategray;
 }
-#chart {
+#graph {
   background-color: rgba(47, 79, 79, 0.2);
 }
 #single-title {
@@ -69,7 +73,7 @@ form {
   border-color: darkolivegreen;
   border-radius: 50%;
 }
-#chart, #chart-head {
+#chart, #chart-head, #graph {
   border-style: solid;
   border-width: thick;
   border-color: darkolivegreen;
@@ -98,23 +102,13 @@ a, #logo {
 }
 .btn-success:hover{
   background-color: darkturquoise;
-  text-decoration: none;;
-}
-button:focus{
-  outline:none !important;
+  text-decoration: none;
 }
 td > a {
   color: darkslategray;
   text-decoration: none;
 }
-.chart {
-  background-color: darkslategray;
-  color: black; 
-  border-width: thick;
-  border-style: solid;
-  border-color: darkolivegreen;
-}
-/* arrow rotation */
+/* globe rotation */
 .purple {
   pointer-events: none;
 }
@@ -132,4 +126,11 @@ td > a {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes move { 0%{ left: 0px; } 50%{ left: 4px; } 100%{ left: 0px; }}
+
+.arrows {
+  position: relative;
+  animation: move 1.6s linear infinite;
 }

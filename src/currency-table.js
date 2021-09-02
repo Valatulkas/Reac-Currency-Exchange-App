@@ -14,20 +14,20 @@ const CurrencyTable = (props) => {
                         <thead> 
                             
                                 <tr>
-                                    <th style={{color: 'antiquewhite'}}><h3><b>Currency</b></h3></th>
+                                    <th><h3><b style={{color: 'antiquewhite'}}>Currency</b></h3></th>
                                     
                                     {rates.some(currency => 
                                         <th key={currency.acronym}><b>{currency.flag}</b></th>
                                     )}
 
-                                    <th style={{color: 'antiquewhite'}}><h3><b>1.00 {base}</b></h3></th>
+                                    <th><h3><b style={{color: 'antiquewhite'}}>1.00 {base}</b></h3></th>
                                 </tr>
                         </thead>
                         <tbody>
                             {rates.map(currency => 
                                 <tr key={currency.acronym}>
-                                    <td style={{color: 'antiquewhite'}}>
-                                        <b>
+                                    <td>
+                                        <b style={{color: 'antiquewhite'}}>
                                             {currency.name} 
                                         </b>
                                     </td>
