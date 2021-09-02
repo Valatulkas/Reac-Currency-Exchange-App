@@ -1,9 +1,3 @@
-hr {
-  width: 75%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 #root, body {
   background-color: honeydew;
 }
@@ -33,10 +27,6 @@ li {
 #currency-conversion {
   margin-top: 18px;
 }
-.main-heading {
-  color: darkblue;
-  font-style: italic;
-}
 h2, h1, h3, .clams {
   text-align: center;
   margin: auto;
@@ -62,8 +52,11 @@ form {
   margin-right: auto;
   margin-left: auto;
 }
-#single-title, #second-title, #chart-head, #chart {
+#single-title, #second-title, #chart-head {
   background-color: darkslategray;
+}
+#chart {
+  background-color: rgba(47, 79, 79, 0.2);
 }
 #single-title {
   border-style: solid;
@@ -113,6 +106,13 @@ button:focus{
 td > a {
   color: darkslategray;
   text-decoration: none;
+}
+.chart {
+  background-color: darkslategray;
+  color: black; 
+  border-width: thick;
+  border-style: solid;
+  border-color: darkolivegreen;
 }
 /* arrow rotation */
 .purple {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const CurrencyTable = (props) => {
     const { base, rates } = props;
@@ -34,9 +33,9 @@ const CurrencyTable = (props) => {
                                     </td>
                                     <td><h3>{currency.flag}</h3></td>
                                     <td >
-                                        <Link to={`/conversion-component?base=${base}&quote=${currency.acronym}`} style={{color: 'antiquewhite'}}> 
-                                            <b>{currency.rate.toFixed(2)} {currency.acronym}</b>
-                                        </Link>
+                                        
+                                            <b style={{color: 'antiquewhite'}}>{currency.rate.toFixed(2)} {currency.acronym}</b>
+                                        
                                     </td>
                                 </tr>
                             )}
