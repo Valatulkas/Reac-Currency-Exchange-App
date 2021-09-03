@@ -16,9 +16,7 @@ const CurrencyTable = (props) => {
                                 <tr>
                                     <th><h3><b style={{color: 'antiquewhite'}}>Currency</b></h3></th>
                                     
-                                    {rates.some(currency => 
-                                        <th key={currency.acronym}><b>{currency.flag}</b></th>
-                                    )}
+                                    <th><h3 style={{color: 'antiquewhite'}}><i class="fab fa-font-awesome-flag"></i></h3></th>
 
                                     <th><h3><b style={{color: 'antiquewhite'}}>1.00 {base}</b></h3></th>
                                 </tr>

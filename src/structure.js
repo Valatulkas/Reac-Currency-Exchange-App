@@ -11,14 +11,11 @@ const Skeleton = (props) => {
                         <div className='col-12 col-md-3' id='onevone'>
                             <button className='btn btn-success'>
                                 <a aria-current="page" class="active d-flex align-items-center" href="/">
-                                
-                                
-                                <i className="fas fa-money-bill-alt fa-3x mr-2" aria-hidden="true"></i>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                <i class="fas fa-exchange-alt arrows" aria-hidden="true"></i>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <i className="far fa-money-bill-alt fa-3x ml-4"  aria-hidden="true"></i>
-                                
+                                    <i className="fas fa-money-bill-alt fa-3x mr-2" aria-hidden="true"></i>
+                                    <span>&nbsp;&nbsp;&nbsp;</span>
+                                    <i class="fas fa-exchange-alt arrows" aria-hidden="true"></i>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <i className="far fa-money-bill-alt fa-3x ml-4"  aria-hidden="true"></i>
                                 </a>
                             </button>
                         </div>

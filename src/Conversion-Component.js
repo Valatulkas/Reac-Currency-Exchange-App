@@ -211,6 +211,12 @@ class SingleConversion extends React.Component {
                 
             <div className='container'>
               <div className='row'>
+                <div className='col-md-3'></div>
+                <div className="col-md-6 p-3 px-5 my-3 rounded" id="chart-head">
+                    <h2 style={{color: 'antiquewhite'}}>Rate History</h2>
+                </div>
+                <div className='col-md-3'></div>
+               
                 <div className='col-12  mb-5'> 
                   <canvas id='graph'ref={this.chartRef} />
                 </div>

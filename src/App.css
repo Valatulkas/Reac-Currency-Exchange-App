@@ -96,13 +96,17 @@ a, #logo {
   color: antiquewhite;
   text-decoration: none;
 }
-#onevone>a:hover, #all-currency>a:hover, .hmm>a:hover, button {
+.hmm>a:hover, button {
   color: darkturquoise;
   text-decoration: none;
 }
 .btn-success:hover{
-  background-color: darkturquoise;
+  background-color: rgb(184, 199, 84);
   text-decoration: none;
+}
+a>.icon:hover {
+  text-decoration: none;
+  color: burlywood;
 }
 td > a {
   color: darkslategray;
