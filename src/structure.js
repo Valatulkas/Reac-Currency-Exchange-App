@@ -10,13 +10,16 @@ const Skeleton = (props) => {
                 <div className='container' id='logo'>
                         <div className='col-12 col-md-3' id='onevone'>
                             <button className='btn btn-success'>
-                                <NavLink to='/'>
-                                <i className="fas fa-money-bill-alt fa-3x mr-2"></i>
+                                <a aria-current="page" class="active d-flex align-items-center" href="/">
+                                
+                                
+                                <i className="fas fa-money-bill-alt fa-3x mr-2" aria-hidden="true"></i>
                                 <span>&nbsp;&nbsp;&nbsp;</span>
-                                <i class="fas fa-exchange-alt arrows"></i>
+                                <i class="fas fa-exchange-alt arrows" aria-hidden="true"></i>
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                <i className="far fa-money-bill-alt fa-3x ml-4"></i>
-                                </NavLink>
+                                <i className="far fa-money-bill-alt fa-3x ml-4"  aria-hidden="true"></i>
+                                
+                                </a>
                             </button>
                         </div>
                         <div className='col-12 col-md-6'>
