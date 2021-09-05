@@ -31,9 +31,7 @@ const CurrencyTable = (props) => {
                                     </td>
                                     <td><h3>{currency.flag}</h3></td>
                                     <td >
-                                        
-                                            <b style={{color: 'antiquewhite'}}>{currency.rate.toFixed(2)} {currency.acronym}</b>
-                                        
+                                        <b style={{color: 'antiquewhite'}}>{currency.rate.toFixed(2)} {currency.acronym}</b>
                                     </td>
                                 </tr>
                             )}
