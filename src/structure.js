@@ -18,7 +18,7 @@ const Skeleton = (props) => {
                                     <i className="far fa-money-bill-alt fa-3x ml-4"  aria-hidden="true"></i>
                                 </a>
                             </button>
-                            <h6 className='pt-2'><small>(CURRENCY TO CURRENCY)</small></h6>
+                            <h6 className='label pt-2'><small>(CURRENCY TO CURRENCY)</small></h6>
                         </div>
                         <div className='col-12 col-md-6'>
                             <h1 className='clams'>
@@ -45,7 +45,7 @@ const Skeleton = (props) => {
                                         </i>
                                 </NavLink>
                             </button>
-                            <h6 className='pt-2'><small>(ALL CURRENCIES)</small></h6>
+                            <h6 className='label pt-2'><small>(ALL CURRENCIES)</small></h6>
                         </div>
                 </div>
             </nav>
@@ -55,20 +55,38 @@ const Skeleton = (props) => {
             <footer className='footer'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-4 text-center py-3 hmm'>
+                        <div className='col-4 text-center py-4 hmm'>
+                            <div className='reveal mb-3'>
+                               GIT&nbsp;
+                            </div>
                             <a href='https://github.com/Valatulkas'>
                                 <i className="fab fa-github fa-3x"></i>
                             </a>
+                            <div className='reveal mb-3'>
+                                HUB
+                            </div>
                         </div>
-                        <div className="col-4 text-center py-3 hmm">
+                        <div className="col-4 text-center py-4 hmm">
+                            <div className='reveal mb-3'>
+                                REACH
+                            </div>
                             <a href="mailto:jfergie93@gmail.com">
                                 <i className="fas fa-paper-plane fa-3x"></i>
                             </a>
+                            <div className='reveal mb-3'>
+                                &nbsp;&nbsp;OUT
+                            </div>
                         </div>
-                        <div className="col-4 text-center py-3 hmm">
+                        <div className="col-4 text-center py-4 hmm">
+                            <div className='reveal pb-3'>
+                               PLAY&nbsp;
+                            </div>
                             <a href='https://www.chess.com'>
                                 <i className="fas fa-chess fa-3x"></i>
                             </a>
+                            <div className='reveal'>
+                                &nbsp;CHESS
+                            </div>
                         </div>
                     </div>
                 </div>

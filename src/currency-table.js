@@ -2,7 +2,7 @@ import React from 'react';
 import currencies from './currencies';
 
 const CurrencyTable = (props) => {
-    const { base, rates, flag } = props;
+    const { base, rates } = props;
     if (!rates) {
         return null;
     }

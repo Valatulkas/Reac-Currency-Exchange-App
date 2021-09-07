@@ -154,7 +154,11 @@ class SingleConversion extends React.Component {
                       <div className='col-0 col-md-2'></div>
                       <div className='col-12 col-md-8 p-3 my-5 rounded' id="single-title">
                           <h2 className='mb-3' style={{color: 'antiquewhite'}} id="arc">
-                              <b>C u r r e n c y &nbsp; C o n v e r s i o n</b>     
+                              <b>
+                               C u r r e n c y &nbsp;
+                                <span className='reverse-spacing'><br/></span>
+                               C o n v e r s i o n
+                               </b>     
                           </h2>
                           <br/>
                           <div>
