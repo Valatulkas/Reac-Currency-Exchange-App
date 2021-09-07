@@ -96,17 +96,16 @@ a, #logo {
   color: antiquewhite;
   text-decoration: none;
 }
-.hmm>a:hover, button {
+.hmm>a:hover {
   color: darkturquoise;
   text-decoration: none;
 }
 .btn-success:hover{
-  background-color: rgb(184, 199, 84);
   text-decoration: none;
+  background-color: darkturquoise;
 }
-a>.icon:hover {
+.btn-success>a:hover {
   text-decoration: none;
-  color: burlywood;
 }
 td > a {
   color: darkslategray;
