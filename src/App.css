@@ -9,6 +9,11 @@
   color: antiquewhite;
   font-size: 60px;
 }
+@media screen and (max-width: 992px) {
+  .spacing {
+    display: none;
+  }
+}
 tr, th {
   padding-left: 20%;
   padding-right: 20%;
@@ -31,10 +36,8 @@ h2, h1, h3, .clams, #center {
   text-align: center;
   margin: auto;
 }
-.center-please {
- justify-content: center;
-  vertical-align: middle;
-}
+
+/* nav & footer styling */
 nav {
   top: 0;
   background-color: darkslategray;
@@ -52,10 +55,16 @@ footer {
   border-top-style: solid;
   border-top-width: thick;
 }
+footer>a {
+  align-items: center;
+  vertical-align: middle;
+}
 form {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* borders and coloring */
 #single-title, #second-title, #chart-head, #chart {
   background-color: darkslategray;
 }
@@ -82,10 +91,6 @@ form {
 td, th {
   text-align: center;
 }
-footer>a {
-  align-items: center;
-  vertical-align: middle;
-}
 table {
   border-style: solid;
   border-width: thick;
@@ -96,21 +101,27 @@ a, #logo {
   color: antiquewhite;
   text-decoration: none;
 }
-.hmm>a:hover {
-  color: darkturquoise;
-  text-decoration: none;
+
+/* button styling */
+button {
+  box-shadow: -3px 3px rgb(124, 187, 7), -3px 3px rgb(124, 187, 7), -3px 3px rgb(124, 187, 7);
+  border: 2px solid rgb(124, 187, 7);
+}
+button:hover {
+  box-shadow: -3px 3px rgb(2, 224, 228), -3px 3px rgb(2, 224, 228), -3px 3px rgb(2, 224, 228);
+  border: 2px solid rgb(2, 224, 228);
 }
 .btn-success:hover{
   text-decoration: none;
   background-color: darkturquoise;
 }
 .btn-success>a:hover {
-  text-decoration: none;
+  color: antiquewhite;
 }
-td > a {
-  color: darkslategray;
-  text-decoration: none;
+.hmm>a:hover {
+  color: darkturquoise;
 }
+
 /* globe rotation */
 .purple {
   pointer-events: none;
@@ -131,6 +142,7 @@ td > a {
   }
 }
 
+/* moving arrow for currency to currency button */
 @keyframes move { 0%{ left: 0px; } 50%{ left: 4px; } 100%{ left: 0px; }}
 
 .arrows {
