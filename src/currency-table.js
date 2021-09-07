@@ -1,4 +1,5 @@
 import React from 'react';
+import currencies from './currencies';
 
 const CurrencyTable = (props) => {
     const { base, rates } = props;
@@ -12,12 +13,9 @@ const CurrencyTable = (props) => {
                 <div className='col-md-8'>
                     <table className='table mb-5' id='chart'>
                         <thead> 
-                            
                                 <tr>
                                     <th><h3><b style={{color: 'antiquewhite'}}>Currency</b></h3></th>
-                                    
-                                    <th><h3 style={{color: 'antiquewhite'}}><i class="fab fa-font-awesome-flag"></i></h3></th>
-
+                                    <th><h3 style={{color: 'antiquewhite'}}>{currencies[base.flag]}</h3></th>
                                     <th><h3><b style={{color: 'antiquewhite'}}>1.00 {base}</b></h3></th>
                                 </tr>
                         </thead>
