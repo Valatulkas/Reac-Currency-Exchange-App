@@ -9,6 +9,7 @@
   color: antiquewhite;
   font-size: 60px;
 }
+
 /* responsive title */
 @media screen and (max-width: 992px) {
   .spacing {
