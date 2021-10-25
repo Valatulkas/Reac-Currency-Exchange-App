@@ -48,7 +48,7 @@ h2, h1, h3, .clams, #center {
 .label {
   display: none;
 }
-#onevone:hover > .label, #all-currency:hover > .label {
+button:hover > .label {
   display: block;
 }
 

@@ -17,8 +17,9 @@ const Skeleton = (props) => {
                                     <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                     <i className="far fa-money-bill-alt fa-3x ml-4"  aria-hidden="true"></i>
                                 </a>
+                                <h6 className='label pt-2'><small>(ONE TO ONE)</small></h6>
                             </button>
-                            <h6 className='label pt-2'><small>(CURRENCY TO CURRENCY)</small></h6>
+                            
                         </div>
                         <div className='col-12 col-md-6'>
                             <h1 className='clams'>
@@ -44,8 +45,8 @@ const Skeleton = (props) => {
                                         <i class="fas fa-coins fa-3x">
                                         </i>
                                 </NavLink>
+                                <h6 className='label pt-2'><small>(ALL CURRENCIES)</small></h6>
                             </button>
-                            <h6 className='label pt-2'><small>(ALL CURRENCIES)</small></h6>
                         </div>
                 </div>
             </nav>
